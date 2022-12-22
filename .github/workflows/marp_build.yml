@@ -14,6 +14,7 @@ jobs:
       uses: docker://marpteam/marp-cli:latest
       with:
         args: main.md --pptx
+              main.md -o main.pptx
       env:
         MARP_USER: root:root
     - uses: actions/upload-artifact@v2
