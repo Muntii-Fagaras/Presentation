@@ -16,3 +16,7 @@ jobs:
         args: main.md -o build/main.pptx
       env:
         MARP_USER: root:root
+    - uses: actions/upload-artifact@v2
+      with:
+          name: output_slide
+          path: main.pptx
