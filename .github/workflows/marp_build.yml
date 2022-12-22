@@ -13,7 +13,7 @@ jobs:
     - name: Marp Build
       uses: docker://marpteam/marp-cli:v1.7.0
       with:
-        args: main.md -o build/main.pptx
+        args: main.md -o main.pptx
       env:
         MARP_USER: root:root
     - uses: actions/upload-artifact@v2
