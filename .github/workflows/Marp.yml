@@ -18,4 +18,6 @@ jobs:
     - uses: actions/upload-artifact@v2
       with:
           name: output_slide
-          path: main.html
+          path: |
+            main.html
+            assets
