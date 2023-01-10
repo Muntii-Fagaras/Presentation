@@ -10,14 +10,12 @@ jobs:
     steps:
     - name: Checkout repository
       uses: actions/checkout@v3
-    - name: Marp Build
-      uses: docker://marpteam/marp-cli:latest
+    - uses: actions/setup-node@v3
       with:
-        args: main.md --pptx
-              main.md -o main.pptx
-      env:
-        MARP_USER: root:root
+        node-version: 16
+    - run: npm install --save-dev @marp-team/marp-cli
+    - run: npx @marp-team/marp-cli@latest main.md -o main.html
     - uses: actions/upload-artifact@v2
       with:
           name: output_slide
-          path: main.pptx
+          path: main.html
