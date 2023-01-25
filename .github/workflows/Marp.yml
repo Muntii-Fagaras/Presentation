@@ -15,7 +15,7 @@ jobs:
         node-version: 16
     - run: npm install --save-dev @marp-team/marp-cli
     - run: npx @marp-team/marp-cli@latest main.md -o main.html
-    - uses: actions/upload-artifact@v2
+    - uses: actions/upload-artifact@v3
       with:
           name: output_slide
           path: |
