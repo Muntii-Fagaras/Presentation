@@ -47,6 +47,12 @@ _footer: "[つくよみちゃん](https://tyc.rei-yumesaki.net/)を使用 Illust
 
 ---
 
+## ドキュメントの整備
+
+取り扱い説明書を作成した
+![bg left height:14cm](assets/2.png)
+
+---
 <!--
 _footer: "[つくよみちゃん](https://tyc.rei-yumesaki.net/) を使用 Illustration by えみゃコーラ"
 -->
